@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomizer</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+</head>
+<div>
+<div class="app">
+<h1>Character Randomizer!</h1>
+<!-- Char info -->
+<h2> Charater Info</h2>
+<div class="name">Input Name: <input id = "inputName" type="text"> <button onclick="fnName()">Submit</button></div>
+<div class="level">Input Level: <input id = "inputLevel" type="number"> <button onclick="fnLevel()">Submit</button></div>
+<div class="levelUp"><button onclick="lvlUp()"> Level Up!</button></div>
+<!-- Char Stats -->
+<h2>Character Stats</h2>
+<div class="stats"><span>STR</span> <span id="str">10</span></div>
+<div class="stats"><span>DEX</span> <span id="dex">10</span></div>
+<div class="stats"><span>CON</span> <span id="con">10</span></div>
+<div class="stats"><span>INT</span> <span id="int">10</span></div>
+<div class="stats"><span>WIS</span> <span id="wis">10</span></div>
+<div class="stats"><span>CHA</span> <span id="cha">10</span></div>
+<button id="roll-btn" onclick="applyStats()">Roll stats!</button>
+<!-- Char features -->
+<h2>Class Features</h2>
+<div class="classFeatures"><span class="levels">Level 1</span> <span id="f1">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 2</span> <span id="f2">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 3</span> <span id="f3">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 4</span> <span id="f4">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 5</span> <span id="f5">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 6</span> <span id="f6">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 7</span> <span id="f7">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 8</span> <span id="f8">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 9</span> <span id="f9">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 10</span> <span id="f10">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 11</span> <span id="f11">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 12</span> <span id="f12">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 13</span> <span id="f13">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 14</span> <span id="f14">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 15</span> <span id="f15">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 16</span> <span id="f16">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 17</span> <span id="f17">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 18</span> <span id="f18">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 19</span> <span id="f19">Feature here!</span></div>
+<div class="classFeatures"><span class="levels">Level 20</span> <span id="f20">Feature here!</span></div>
+<button id="roll-btn" onclick="applyFeatures()">Apply Features!</button>
+</div>
+<div class="banner">
+    <div class="b1"><img src="stone.jpg" alt="Banner 1"></div>
+    <div class="b2"><img src="stone.jpg" alt="Banner 2"></div>
+</div>
+</main>

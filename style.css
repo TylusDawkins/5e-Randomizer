@@ -1,0 +1,50 @@
+*{
+    font-family: 'Gideon Roman', cursive;
+    font-size: 19px;
+}
+body{
+    /* background-color: rgb(100,75,50,1); */
+    background-color: rgb(193,154,107,.75);
+    /* background-image: url(https://cdn2.vectorstock.com/i/1000x1000/04/36/seamless-stone-background-vector-640436.jpg); */
+    text-align: center;
+    font-weight: bold;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+.stats{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    font-size: 5px;
+    display: inline-block;
+    font-family: 'Gideon Roman', cursive;
+}
+#inputlevel {
+    padding: 5px;
+    margin: 5px;
+}
+main{
+    display: inline-flex
+}
+.app{
+    flex-direction: row;
+    flex-direction: column;
+}
+.b1{
+    align-content: flex-start;
+    flex-direction: row;
+    display: inline-flex;
+}
+.b2{
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    display: inline-flex;
+}
