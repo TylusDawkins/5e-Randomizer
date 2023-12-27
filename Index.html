@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randomizer</title>
+    <title>5e Roguelike</title>
     <link rel="stylesheet" href="./style.css">
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,15 +18,31 @@
 <h2> Charater Info</h2>
 <div class="name">Input Name: <input id = "inputName" type="text"> <button onclick="fnName()">Submit</button></div>
 <div class="level">Input Level: <input id = "inputLevel" type="number"> <button onclick="fnLevel()">Submit</button></div>
-<div class="levelUp"><button onclick="lvlUp()"> Level Up!</button></div>
+<div class="levelUp"><button>Level Up!</button></div>
 <!-- Char Stats -->
+<div id="char-stats">
 <h2>Character Stats</h2>
-<div class="stats"><span>STR</span> <span id="str">10</span></div>
-<div class="stats"><span>DEX</span> <span id="dex">10</span></div>
-<div class="stats"><span>CON</span> <span id="con">10</span></div>
-<div class="stats"><span>INT</span> <span id="int">10</span></div>
-<div class="stats"><span>WIS</span> <span id="wis">10</span></div>
-<div class="stats"><span>CHA</span> <span id="cha">10</span></div>
+    <div id="stats">
+        <div class="stats">
+            <div id="stat-block">
+                <div>Physical</div> 
+                <div id="Physical">10</div>
+            </div>
+        </div>
+        <div class="stats">
+            <div id="stat-block">
+                <div>Fortitude</div> 
+                <div id="Fortitude">10</div>
+            </div>
+        </div>
+        <div class="stats">
+            <div id="stat-block">
+                <div>Mental</div> 
+                <div id="Mental">10</div>
+            </div>
+        </div>
+    </div>
+</div>
 <button id="roll-btn" onclick="applyStats()">Roll stats!</button>
 <!-- Char features -->
 <h2>Class Features</h2>
@@ -52,8 +68,25 @@
 <div class="classFeatures"><span class="levels">Level 20</span> <span id="f20">Feature here!</span></div>
 <button id="roll-btn" onclick="applyFeatures()">Apply Features!</button>
 </div>
-<div class="banner">
-    <div class="b1"><img src="stone.jpg" alt="Banner 1"></div>
-    <div class="b2"><img src="stone.jpg" alt="Banner 2"></div>
+
+<div id="choice-modal">
+    <button id="close-modal-btn">X</button>
+    <div class="choice-modal-content" id="choice1">
+        <div class="choice-name"></div>
+        <div class="choice-desc"></div>
+        <div class="choice-tier"></div>
+        <button class="choice-btn">Choose</button>
+    </div>
+    <div class="choice-modal-content" id="choice2">
+        <div class="choice-name"></div>
+        <div class="choice-desc"></div>
+        <div class="choice-tier"></div>
+        <button class="choice-btn">Choose</button>
+    </div>
+    <div class="choice-modal-content" id="choice3">
+        <div class="choice-name"></div>
+        <div class="choice-desc"></div>
+        <div class="choice-tier"></div>
+        <button class="choice-btn">Choose</button>
+    </div>
 </div>
-</main>
